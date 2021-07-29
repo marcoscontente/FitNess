@@ -27,8 +27,8 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Yd-4F-ytk">
                                         <rect key="frame" x="343" y="4" width="24" height="24"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="24" id="1Mo-VQ-w0J"/>
-                                            <constraint firstAttribute="width" constant="24" id="qSX-pD-KMo"/>
+                                            <constraint firstAttribute="height" constant="24" id="e41-1B-0yK"/>
+                                            <constraint firstAttribute="width" constant="24" id="zqL-W2-crb"/>
                                         </constraints>
                                         <state key="normal" image="CloseButton"/>
                                     </button>
@@ -102,6 +102,17 @@
                                     <constraint firstAttribute="height" constant="128" id="upC-vJ-sh6"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tr2-7F-Zfu" userLabel="SettingsButton">
+                                <rect key="frame" x="343" y="635" width="32" height="32"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="32" id="EY2-tE-iyl"/>
+                                    <constraint firstAttribute="width" secondItem="tr2-7F-Zfu" secondAttribute="height" multiplier="1:1" id="QDZ-cd-pcl"/>
+                                </constraints>
+                                <state key="normal" image="gear"/>
+                                <connections>
+                                    <action selector="showSettings:" destination="BYZ-38-t0r" eventType="touchUpInside" id="GaC-hc-msp"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.52766031030000005" green="0.88262051340000003" blue="0.92994982000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -111,7 +122,9 @@
                             <constraint firstItem="eOr-z6-zhT" firstAttribute="top" secondItem="L42-YW-DhX" secondAttribute="bottom" constant="77" id="8w7-8P-Cs7"/>
                             <constraint firstItem="L42-YW-DhX" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="DGk-ai-dIS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="L42-YW-DhX" secondAttribute="trailing" constant="20" id="Dfd-Nv-SnA"/>
+                            <constraint firstItem="tr2-7F-Zfu" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="MeK-Ih-wIS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eOr-z6-zhT" secondAttribute="bottom" constant="50" id="V8f-YW-d74"/>
+                            <constraint firstItem="tr2-7F-Zfu" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="WTK-h3-ETu"/>
                             <constraint firstItem="Zhy-vW-Ga2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="cFx-pv-dQV"/>
                             <constraint firstItem="lgK-xI-lnb" firstAttribute="centerX" secondItem="Zhy-vW-Ga2" secondAttribute="centerX" id="gzI-jZ-oOW"/>
                             <constraint firstItem="eOr-z6-zhT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="xbo-5x-bBg"/>
@@ -177,6 +190,7 @@
     </scenes>
     <resources>
         <image name="CloseButton" width="100" height="100"/>
+        <image name="gear" width="100" height="100"/>
         <namedColor name="DefaultAlertColor">
             <color red="1" green="1" blue="0.20600000023841858" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

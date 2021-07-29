@@ -26,8 +26,6 @@
 /// OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 /// THE SOFTWARE.
 
-
-import Foundation
 import UIKit
 
 @IBDesignable class ChaseView: UIView {
@@ -58,6 +56,8 @@ import UIKit
   }
 
   override func prepareForInterfaceBuilder() {
+    super.prepareForInterfaceBuilder()
+
     let bundle = Bundle(for: ChaseView.self)
     nessieView.image = UIImage(named: "Nessie", in: bundle, compatibleWith: nil)
     runnerView.image = UIImage(named: "Runner", in: bundle, compatibleWith: nil)
