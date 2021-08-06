@@ -9,4 +9,11 @@ extension RootViewController {
 		}
 		return children
 	}
+	
+	var alertController: AlertViewController {
+		guard let children = children.first(where: {$0 is AlertViewController}) as? AlertViewController else {
+			return AlertViewController()
+		}
+		return children
+	}
 }

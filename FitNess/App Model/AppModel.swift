@@ -4,7 +4,12 @@ class AppModel {
 
   static let instance = AppModel()
   let dataModel = DataModel()
-  private(set) var appState: AppState = .notStarted
+	var stateChangedCallback: ((AppModel) -> ())?
+	private(set) var appState: AppState = .notStarted {
+		didSet {
+			stateChangedCallback?(self)
+		}
+	}
 
   func start() throws {
     guard dataModel.goal != nil else {
@@ -35,4 +40,6 @@ class AppModel {
 		}
 		appState = .caught
 	}
+	
+	
 }

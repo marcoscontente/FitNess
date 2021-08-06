@@ -33,8 +33,12 @@ class StepCountController: UIViewController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
-
 		updateUI()
+		AppModel.instance.stateChangedCallback = { model in
+			DispatchQueue.main.async {
+				self.updateUI()
+			}
+		}
   }
 	
 	func updateUI() {
@@ -50,13 +54,26 @@ class StepCountController: UIViewController {
   // MARK: - UI Actions
   
   @IBAction func startStopPause(_ sender: Any?) {
-    do {
-      try AppModel.instance.start()
-    } catch {
-      showNeedGoalAlert()
-    }
+		switch AppModel.instance.appState {
+			case .notStarted:
+				start()
+			case .inProgress:
+				AppModel.instance.pause()
+			case .paused:
+				start()
+			case .completed, .caught:
+				AppModel.instance.restart()
+		}
 		updateUI()
   }
+	
+	private func start() {
+		do {
+			try AppModel.instance.start()
+		} catch {
+			showNeedGoalAlert()
+		}
+	}
   
   @IBAction func showSettings(_ sender: Any) {
     getGoalFromUser()

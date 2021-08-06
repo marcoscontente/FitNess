@@ -14,6 +14,14 @@
 		0A9EB50B21C072F00062B66E /* AppModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A9EB50A21C072F00062B66E /* AppModel.swift */; };
 		0AA5E735219B9B4600B7A0D0 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0AA5E734219B9B4600B7A0D0 /* AppState.swift */; };
 		D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */; };
+		D635D9EF26B3477500FF379D /* Alert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9EB26B3477500FF379D /* Alert.swift */; };
+		D635D9F026B3477500FF379D /* AlertViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9EC26B3477500FF379D /* AlertViewController.swift */; };
+		D635D9F126B3477500FF379D /* AlertCenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9ED26B3477500FF379D /* AlertCenter.swift */; };
+		D635D9F226B3477500FF379D /* AlertNotification.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9EE26B3477500FF379D /* AlertNotification.swift */; };
+		D635D9F526B34B3200FF379D /* AlertCenterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9F426B34B3200FF379D /* AlertCenterTests.swift */; };
+		D635D9F826B3508400FF379D /* RootViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9F726B3508400FF379D /* RootViewControllerTests.swift */; };
+		D635D9FB26B44DB000FF379D /* Notification+Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9FA26B44DB000FF379D /* Notification+Tests.swift */; };
+		D635D9FD26B469F600FF379D /* AlertViewControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D635D9FC26B469F600FF379D /* AlertViewControllerTests.swift */; };
 		D64EEDD526B065BF00DF707A /* AppModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EEDD426B065BF00DF707A /* AppModelTests.swift */; };
 		D64EEDDE26B07F1100DF707A /* StepCountControllerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D64EEDDD26B07F1100DF707A /* StepCountControllerTests.swift */; };
 		D65E66E526B1FD850099AA8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D65E66E326B1FD840099AA8A /* LaunchScreen.storyboard */; };
@@ -48,6 +56,14 @@
 		D2A5F2001F4A9144005CD714 /* FitNess.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FitNess.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D2A5F20F1F4A9144005CD714 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D635D9EB26B3477500FF379D /* Alert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Alert.swift; sourceTree = "<group>"; };
+		D635D9EC26B3477500FF379D /* AlertViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertViewController.swift; sourceTree = "<group>"; };
+		D635D9ED26B3477500FF379D /* AlertCenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCenter.swift; sourceTree = "<group>"; };
+		D635D9EE26B3477500FF379D /* AlertNotification.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertNotification.swift; sourceTree = "<group>"; };
+		D635D9F426B34B3200FF379D /* AlertCenterTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlertCenterTests.swift; sourceTree = "<group>"; };
+		D635D9F726B3508400FF379D /* RootViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewControllerTests.swift; sourceTree = "<group>"; };
+		D635D9FA26B44DB000FF379D /* Notification+Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Notification+Tests.swift"; sourceTree = "<group>"; };
+		D635D9FC26B469F600FF379D /* AlertViewControllerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertViewControllerTests.swift; sourceTree = "<group>"; };
 		D64EEDC926B062A900DF707A /* FitNessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FitNessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D64EEDCD26B062A900DF707A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D64EEDD426B065BF00DF707A /* AppModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppModelTests.swift; sourceTree = "<group>"; };
@@ -133,6 +149,7 @@
 		D2A5F2021F4A9144005CD714 /* FitNess */ = {
 			isa = PBXGroup;
 			children = (
+				D635D9EA26B3477500FF379D /* Alerts */,
 				D65E66EC26B1FE0F0099AA8A /* Data Model */,
 				D65E66E226B1FD840099AA8A /* Resources */,
 				D2A5F2201F4A96D0005CD714 /* AppDelegate.swift */,
@@ -142,6 +159,42 @@
 				D2A5F20F1F4A9144005CD714 /* Info.plist */,
 			);
 			path = FitNess;
+			sourceTree = "<group>";
+		};
+		D635D9EA26B3477500FF379D /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				D635D9EB26B3477500FF379D /* Alert.swift */,
+				D635D9EC26B3477500FF379D /* AlertViewController.swift */,
+				D635D9ED26B3477500FF379D /* AlertCenter.swift */,
+				D635D9EE26B3477500FF379D /* AlertNotification.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		D635D9F326B34B3200FF379D /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				D635D9F426B34B3200FF379D /* AlertCenterTests.swift */,
+				D635D9FC26B469F600FF379D /* AlertViewControllerTests.swift */,
+			);
+			path = Alerts;
+			sourceTree = "<group>";
+		};
+		D635D9F626B3505500FF379D /* AppLayer */ = {
+			isa = PBXGroup;
+			children = (
+				D635D9F726B3508400FF379D /* RootViewControllerTests.swift */,
+			);
+			path = AppLayer;
+			sourceTree = "<group>";
+		};
+		D635D9F926B44D9800FF379D /* Alerts */ = {
+			isa = PBXGroup;
+			children = (
+				D635D9FA26B44DB000FF379D /* Notification+Tests.swift */,
+			);
+			path = Alerts;
 			sourceTree = "<group>";
 		};
 		D64EEDCA26B062A900DF707A /* FitNessTests */ = {
@@ -174,6 +227,8 @@
 		D64EEDDF26B07F3B00DF707A /* Cases */ = {
 			isa = PBXGroup;
 			children = (
+				D635D9F626B3505500FF379D /* AppLayer */,
+				D635D9F326B34B3200FF379D /* Alerts */,
 				D65E66FA26B1FE900099AA8A /* Data Model */,
 				D64EEDDC26B07F0500DF707A /* UI Layer */,
 				D64EEDD626B065DA00DF707A /* App Model */,
@@ -218,6 +273,7 @@
 		D65E670026B20AD30099AA8A /* Test Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				D635D9F926B44D9800FF379D /* Alerts */,
 				D65E670426B223990099AA8A /* Data Model */,
 				D65E670326B223910099AA8A /* App Layer */,
 			);
@@ -352,7 +408,11 @@
 				0AA5E735219B9B4600B7A0D0 /* AppState.swift in Sources */,
 				D65E66F926B1FE240099AA8A /* AppError.swift in Sources */,
 				D2A5F2211F4A96D0005CD714 /* AppDelegate.swift in Sources */,
+				D635D9F026B3477500FF379D /* AlertViewController.swift in Sources */,
 				0A1BDA19218E542100804262 /* ChaseView.swift in Sources */,
+				D635D9F226B3477500FF379D /* AlertNotification.swift in Sources */,
+				D635D9F126B3477500FF379D /* AlertCenter.swift in Sources */,
+				D635D9EF26B3477500FF379D /* Alert.swift in Sources */,
 				0A9EB50B21C072F00062B66E /* AppModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -363,10 +423,14 @@
 			files = (
 				D65E670226B20AF20099AA8A /* RootViewController+Tests.swift in Sources */,
 				D65E670626B223AA0099AA8A /* DataModel+Tests.swift in Sources */,
+				D635D9FD26B469F600FF379D /* AlertViewControllerTests.swift in Sources */,
+				D635D9F526B34B3200FF379D /* AlertCenterTests.swift in Sources */,
 				D65E66FC26B1FE9E0099AA8A /* DataModelTests.swift in Sources */,
+				D635D9FB26B44DB000FF379D /* Notification+Tests.swift in Sources */,
 				D64EEDD526B065BF00DF707A /* AppModelTests.swift in Sources */,
 				D65E670826B223FB0099AA8A /* AppModel+Tests.swift in Sources */,
 				D65E66FF26B209960099AA8A /* ViewControllers.swift in Sources */,
+				D635D9F826B3508400FF379D /* RootViewControllerTests.swift in Sources */,
 				D64EEDDE26B07F1100DF707A /* StepCountControllerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

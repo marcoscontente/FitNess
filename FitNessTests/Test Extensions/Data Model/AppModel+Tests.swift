@@ -6,8 +6,8 @@ extension AppModel {
 		try! setCompleted()
 	}
 	
-//	func setToCaught() {
-//		dataModel.setToCaught()
-//		try! setCaught()
-//	}
+	func setToCaught() {
+		dataModel.setToCaught()
+		try! setCaught()
+	}
 }
